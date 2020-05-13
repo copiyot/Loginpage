@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to left, #1c3b68 50%, #dee7f7 50%);
+  position: relative;
+}
+
+.bluebox{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    background-image: linear-gradient(135deg,#268f63, #4343a2);
+    /* background-color: #268f63; */
+    border-radius: 10px;
+} 
+
+.bluebox-inner{
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 12.5px;
+    left: 12.5px;
+    background-color: #1f3564;
+}
+
+.greenbox{
+    background-color: #3bea90;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    top: 65px;
+    left: 280px;
+    transform: rotate(45deg);
+}
+
+.greenbox-inner{
+    position: absolute;
+    background-color: #f4f5f9;
+    height: 80px;
+    width: 80px;
+    top: 10px;
+    left: 10px;
+}
+
+.redbox {
+    background-color: #c74e66;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    position: absolute;
+    left: 400px;
+    bottom: 50px;
+    transform: rotate(45deg);
+}
+
+.redbox-inner {
+    background-color: #f4f5f9;
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    left: 10px;
+    bottom: 10px;
+}
+
+.container {
+  background: url("./img/port.jpg") -20% no-repeat;
+  background-size: cover;
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 3px 33px 15px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 0px 3px 33px 15px rgba(0, 0, 0, 0.27);
+  box-shadow: 0px 3px 33px 15px rgba(0, 0, 0, 0.27);
+  z-index: 3;
+}
+
+.login {
+  background-color: #dee7f7;
+  float: left;
+}
+
+.login,
+.about {
+  height: 100%;
+  width: 50%;
+}
+
+.about {
+  background-color: rgba(37, 63, 104, 0.9);
+  float: left;
+}
+
+.login-form {
+  position: relative;
+  padding: 20px;
+  height: 50%;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+}
+
+.login-form form input,
+button,
+hr {
+  width: 100%;
+}
+
+.login-form {
+  border-radius: 5px;
+}
+
+.login-form form p {
+  margin-bottom: 15px;
+}
+
+.login-form form input {
+  margin-top: 3px;
+  height: 30px;
+  border: 1px solid #40475075;
+  border-radius: 3px;
+}
+
+.login-form form button {
+  margin-top: 3px;
+  height: 30px;
+  background-color: #ff4858;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.checkbox-container a {
+  font-size: 12px;
+}
+
+.checkbox span {
+  font-size: 12px;
+}
+
+a:link {
+  text-decoration: none;
+  /* color: aqua; */
+}
+
+.password-reset {
+  margin-left: 20px;
+}
+
+.about-container {
+  padding-left: 7%;
+  padding-top: 35%;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1025px) {
+    body {
+        background: #dee7f7;
+    }
+
+    .bluebox, .bluebox-inner, .redbox, .redbox-inner, .greenbox, .greenbox-inner{
+        display: none;
+    }
+    .about {
+        display: none;
+    }
+    .login {
+        width: 100%;
+    }
+  }
